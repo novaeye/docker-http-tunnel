@@ -1,2 +1,3 @@
 #!/bin/sh
+/usr/sbin/sshd
 chisel server --proxy http://localhost
