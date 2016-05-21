@@ -1,4 +1,0 @@
-#!/bin/sh
-for url in $ALIVE; do
-    wget -qO - "$url"
-done
