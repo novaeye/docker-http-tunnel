@@ -12,7 +12,7 @@ ENV PACKAGE github.com/jpillora/chisel
 
 RUN yum update && \
         yum install golang git -y && \
-        go get -v -u $PACKAGE && \
+        go get -v -u $PACKAGE
         
 # add a startup script
 COPY forward /usr/local/bin
