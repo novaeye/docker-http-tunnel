@@ -10,8 +10,7 @@ ENV PATH $PATH:/usr/local/go/bin:$GOPATH/bin
 #package 
 ENV PACKAGE github.com/jpillora/chisel
 
-RUN yum update -y && \
-        yum install golang git -y && \
+RUN yum install golang git -y && \
         go get -v -u $PACKAGE
         
 # add a startup script
