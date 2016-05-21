@@ -11,7 +11,7 @@ ENV PATH $PATH:/usr/local/go/bin:$GOPATH/bin
 ENV PACKAGE github.com/jpillora/chisel
 
 RUN yum update && \
-        yum install golang git -y && \
+        yum install openssh-server golang git -y && \
         go get -v -u $PACKAGE
         
 # add a startup script
